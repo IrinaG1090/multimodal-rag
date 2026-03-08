@@ -1,8 +1,9 @@
 import os
 from pathlib import Path
 
-# Пути
-BASE_DIR = Path(__file__).resolve().parent.parent
+# config.py лежит в src, BASE_DIR должен указывать на корень проекта
+BASE_DIR = Path(__file__).resolve().parent.parent  # поднимаемся на два уровня
+
 DATA_DIR = BASE_DIR / "data"
 RAW_DIR = DATA_DIR / "raw"
 PROCESSED_DIR = DATA_DIR / "processed"
@@ -20,18 +21,14 @@ CHUNK_OVERLAP = 200
 TOP_K = 5
 RERANK_TOP_K = 10
 
-# Модели (твой API-ключ OpenAI должен быть в .env)
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-VISION_MODEL = "gpt-4o"
-EMBEDDING_MODEL = "text-embedding-3-small"
-LLM_MODEL = "gpt-4o"
-
 # Параметры эмбеддингов
-EMBEDDING_MODEL = "all-MiniLM-L6-v2"  # локальная модель для эмбеддингов
-EMBEDDING_DIM = 384  # размерность для all-MiniLM-L6-v2
+EMBEDDING_MODEL = "all-MiniLM-L6-v2"
+EMBEDDING_DIM = 384
 
 # FAISS параметры
 FAISS_INDEX_PATH = INDEX_DIR / "faiss_index.bin"
 FAISS_METADATA_PATH = INDEX_DIR / "index_metadata.json"
 
-print("[OK] Конфигурация загружена")
+print(f"[OK] Конфигурация загружена. BASE_DIR: {BASE_DIR}")
+print(f"[OK] DATA_DIR: {DATA_DIR}")
+print(f"[OK] PROCESSED_DIR: {PROCESSED_DIR}")
