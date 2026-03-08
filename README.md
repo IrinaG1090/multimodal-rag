@@ -2,6 +2,7 @@
 
 [![Python](https://img.shields.io/badge/python-3.12-blue)](https://www.python.org/)
 [![FAISS](https://img.shields.io/badge/FAISS-1.10-green)](https://github.com/facebookresearch/faiss)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://твой-url.streamlit.app)
 [![OpenRouter](https://img.shields.io/badge/OpenRouter-API-orange)](https://openrouter.ai/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
