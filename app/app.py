@@ -23,10 +23,10 @@ from src.process_metadata import convert_to_document
 from src.openrouter_captioner import generate_caption
 from src.index_images import create_combined_index
 
-if __name__ == "__main__":
-    import streamlit.web.bootstrap as bootstrap
-    import sys
-    bootstrap.run(str(__file__), False, [], {})
+# if __name__ == "__main__":
+#    import streamlit.web.bootstrap as bootstrap
+#    import sys
+#    bootstrap.run(str(__file__), False, [], {})
 
 st.set_page_config(
     page_title="Multimodal RAG Search",
